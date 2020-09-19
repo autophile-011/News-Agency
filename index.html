@@ -1,0 +1,570 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Kulim+Park&display=swap" rel="stylesheet">
+        <style>
+            .container{
+                margin-top: 30px;
+            }
+            .col-md-8{
+               
+               padding: 40px;
+            }
+
+            #breaking{
+                padding:15px;
+                text-align:center;
+                float:left;
+                width:200px;
+                height:50px;
+                background-color: black;
+            }
+            #running{
+                float:left;
+                width:900px;
+                height:50px;
+                background-color:#fe9801;
+                padding:15px;
+                
+            }
+            .img{
+                width:400px;
+                height:200px;
+                background-color: black;
+              
+                margin-left: 85px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .para{
+                margin-top: 10px;
+                text-align:center;
+            }
+            .topnews1 a:hover {
+                background-size: 100% 100%;
+                background-color:#32afa9;
+                color: #fff;
+                height: 50px;
+                width: 25px;
+                padding:5px;
+                border: 1px solid #fff ;
+                background-image: linear-gradient(#32afa9,#32afa9);
+                background-repeat: no-repeat;
+                transition: background-size .5s, color .5s;
+                background-size: 0 0;
+                background-position: 50% 50%;
+                border-radius: 25px;
+            }
+            .links a:hover {
+                background-size: 100% 100%;
+                background-color:#32afa9;
+                color: #fff;
+                height: 50px;
+                width: 25px;
+                padding:5px;
+                border: 1px solid #fff ;
+                background-image: linear-gradient(#32afa9,#32afa9);
+                background-repeat: no-repeat;
+                transition: background-size .5s, color .5s;
+                background-size: 0 0;
+                background-position: 50% 50%;
+                border-radius: 25px;
+            }
+            
+            
+            .links{
+                margin-top: 5px;
+                line-height: 10px;
+            }
+            
+            .imp{
+                display: flex;
+                height:130px;
+                margin-top:30px; 
+                border-style: ridge;
+                border-width: 1px;
+                border-radius: 7px;
+                box-shadow:7px 7px 8px #e7f0c3;
+            }
+            .imp2 p:hover{
+                cursor:pointer;
+                color:#fe9801;
+            }
+            .smallimage{
+                padding:15px;
+                margin-left: 15px;
+                border-radius: 5px;
+            }
+            h4{
+                color:#fe9801; 
+            }
+            .imp2{
+                padding:10px;
+            }
+            p{
+              color: #698474;  
+              text-align: center;
+            }
+            .horoscope{
+                margin-top: 20px;
+                width:1150px;
+                height:200px;
+                background-color: #ffa259;
+                border-radius: 7px;
+                padding: 20px;
+            }
+            .horoscopeh3{
+                color: white;
+                text-align: center;
+            }
+            .horoscopep{
+                color:#636e72;
+                margin-top: 16px;
+            }
+            .horoscopep:hover{
+               cursor: pointer;
+               color: white;
+            }
+            .btn{
+                border-radius: 4px;
+                padding: 5px;
+            }
+            .btn:hover{
+                 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+            }
+            .btn4{
+                margin-left: 350px;
+                margin-top: 30px;
+            }
+                    .dropbtn {
+                background-color: #ff9f43;
+                color: white;
+                padding: 10px;
+                font-size: 14px;
+                border: none;
+                border-radius: 3px;
+            }
+
+            .dropdown {
+            position: relative;
+            display: inline-block;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+              }
+              .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+              }
+              .dropdown-content a:hover {
+                                    background-color: #ddd;
+                                    width:100%;
+                                    border-radius:0px;
+                                    border:0px;
+                                    height: 40px;
+                                    color: black;
+                                    padding:15px 15px;;
+                                    }
+              .dropdown:hover .dropdown-content {display: block;}
+              
+              .threebox{
+                  width:350px;
+                  height: 130px;
+                  margin-top: 20px;
+                  margin-left: 10px;
+                  border-radius: 7px;
+                  display: flex;
+                  border-style: ridge;
+                  border-width: 1px;
+                  box-shadow:7px 7px 8px #e7f0c3;
+                  padding:15px;
+                }
+                .threebox1{
+                    width:100px;
+                    height:100px;
+                }
+                .threebox2{
+                    margin-left: 13px;
+                }
+                .threebox2 p:hover{
+                    cursor: pointer;
+                    color:#fe9801; 
+                }
+                .col-md-6 h3{
+                    text-decoration:underline;
+                    margin-top: 2px;
+                }
+                .bottombox{
+                    background-color: #222f3e;
+                    width:1150px;
+                    height: 500px; 
+                    padding:20px;
+                    margin-top:20px;
+                    display: flex;
+                } 
+                .section{
+                    width:200px;
+                    height:400px;
+                    padding:20px;
+                    text-align: center;
+                    border-right: 0.1px solid #4b4b4b;
+                }
+                .section h4{
+                  font-size: 20px;
+                  font-family: 'Kulim Park', sans-serif; 
+                  color: #c8d6e5;
+                }
+                .section a{
+                    font-family: 'Kulim Park', sans-serif;
+                    color:#576574 ;
+                    font-size: 12px;
+                }
+                .section a:hover{
+                    cursor: pointer;
+                    color:#c8d6e5;
+                    text-decoration: none;
+                }
+                .Latestnews{
+                    width:200px;
+                    height:400px;
+                    padding:20px;
+                    text-align: center;
+                    border-right: 0.1px solid #4b4b4b;
+                }
+                .Latestnews h4{
+                  font-size: 20px;
+                  font-family: 'Kulim Park', sans-serif; 
+                  color: #c8d6e5;
+                }
+                .Latestnews a{
+                    font-family: 'Kulim Park', sans-serif;
+                    color:#576574 ;
+                    font-size: 12px;
+                }
+                .Latestnews a:hover{
+                    cursor: pointer;
+                    color:#c8d6e5;
+                    text-decoration: none;
+                }
+                .Trending{
+                    width:200px;
+                    height:400px;
+                    padding:20px;
+                    text-align: center;
+                    border-right: 0.1px solid #4b4b4b;
+                }
+                .Trending h4{
+                  font-size: 20px;
+                  font-family: 'Kulim Park', sans-serif; 
+                  color: #c8d6e5;
+                }
+                .Trending a{
+                    font-family: 'Kulim Park', sans-serif;
+                    color:#576574 ;
+                    font-size: 12px;
+                }
+                .Trending a:hover{
+                    cursor: pointer;
+                    color:#c8d6e5;
+                    text-decoration: none;
+                }
+                .followus{
+                    width:500px;
+                    height: 200px;
+                    padding: 20px;
+                    margin-left: 20px;
+                    border-bottom:  0.1px solid #4b4b4b;
+                }
+                .followus h4{
+                  font-size: 20px;
+                  font-family: 'Kulim Park', sans-serif; 
+                  color: #c8d6e5;
+                }
+        </style>
+    
+</head>
+<body>
+  			<div class="container " >
+            <div class="row">
+               
+                <div class="col-md-4 ">
+                    <img src="E:\pics\logo1.jpg"/>
+                </div>
+                <div class="col-md-8 well">
+                   advertisement
+                </div>
+                <div class="col-md-3 " >
+                    <div id="breaking">
+                        <font color="white"><b>BREAKING NEWS</b></font>
+                    </div>
+                </div>
+                <div class="col-md-9">    
+                    <div id="running" width="1000px" height="50px">
+                    <marquee direction="scroll">
+                        <font color="white">
+                        keshfriueshtiuewhtuerigfirsuhgdfjygujhklhkhfjdytyglhiljlihjhfhtdrwtreytryfjygkjtkuykut
+                        </font>
+                    </marquee>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="links">
+                            <div class="dropdown">
+                            <button class="dropbtn">Menu</button>
+                                <div class="dropdown-content">
+                                    <a href="a">Link 1</a>
+                                    <a href="a">Link 2</a>
+                                    <a href="a">Link 3</a>
+                                </div>
+                            </div>&nbsp &nbsp
+                                <a href="a">Hindi News</a>&nbsp|&nbsp
+                                <a href="a">MP</a>&nbsp|&nbsp
+                                <a href="a">Bhopal</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 ">
+                    
+                    <div class="topnews1">
+                        <b><h3 align="center">Top News</h3></b>
+                        <marquee direction="up" scrollamount="2">
+                        <ul>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Bollywood</a></li>
+                        <li><a href="#">gadgets/technologies</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">international news</a></li>
+                        <li><a href="#">Jobs and Education</a></li>
+                        <li><a href="#">Politics</a></li>
+                        <li><a href="#">State</a></li>
+                        <li><a href="#">No fake news</a></li>
+                        <li><a href="#">Elections</a></li>
+                        <li><a href="#">yaadein 2019</a></li>
+                        <li><a href="#">Social media</a></li>
+                        <li><a href="#">welcome 2020</a></li>
+                        </ul>
+                        </marquee>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="topnews2">
+                        <h3 align="center">Breaking News</h3>
+                        <div class="img">
+                            <img src="E:\pics\img3.jfif" width="400px" height="200px"/>  
+                        </div>
+                        <div class="para">
+                            A paragraph is a self-contained unit of a discourse in writing  any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.
+                            <a href="#">Read more</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="imp">
+                        <div class="imp1">
+                            <div class="smallimage">
+                            <img src="E:\pics\img2.jfif" width="100px" height="100px"/>
+                            </div>
+                        </div>
+                        <div class="imp2">
+                            <h4>Fatafat Khas...</h4>
+                            <p>yha pe news k bare me 2 lines aayegii!!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="imp">
+                        <div class="imp1">
+                            <div class="smallimage">
+                            <img src="E:\pics\img2.jfif" width="100px" height="100px"/>
+                            </div>
+                        </div>
+                        <div class="imp2">
+                            <h4>MP...</h4>
+                            <p>yha pe news k bare me 2 lines aayegii!!</p>
+                        </div>
+                    </div>
+                </div>  
+                <div class="col-md-12">
+                    <div class="horoscope">
+                        <h3 class="horoscopeh3">Aaj ka Rashifal</h3>
+                        <p class="horoscopep">Fatafat horoscope is an astrological chart or diagram representing the positions of the Sun, Moon, planets, astrological aspects and sensitive angles at the time of an event, such as the moment of a person's birth. The word horoscope is derived from Greek words hõra and scopos meaning "time" and "observer".</p>
+                        <div class="btn4">
+                        <button class="btn">Astrology</button>
+                        <button class="btn">Horoscope</button>
+                        <button class="btn">Zodiacs & Astrology</button>
+                        <button class="btn">Yearly Horoscope 2020</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="threebox">
+                        <div class="threebox1">
+                            <img src="E:\pics\img3.jfif" width="100px" height="100px" />
+                        </div>
+                        <div class="threebox2">
+                            <h4>Entertainment</h4>
+                            <p>news k bare me 2 line!!!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="threebox">
+                        <div class="threebox1">
+                            <img src="E:\pics\img3.jfif" width="100px" height="100px" />
+                        </div>
+                        <div class="threebox2">
+                            <h4>Womens special</h4>
+                            <p>news k bare me 2 line!!!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="threebox">
+                        <div class="threebox1">
+                            <img src="E:\pics\img3.jfif" width="100px" height="100px" />
+                        </div>
+                        <div class="threebox2">
+                            <h4>Sports</h4>
+                            <p>news k bare me 2 line!!!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 ">
+                    <div class="threebox">
+                        <div class="threebox1">
+                            <img src="E:\pics\img3.jfif" width="100px" height="100px" />
+                        </div>
+                        <div class="threebox2">
+                            <h4>Bihar</h4>
+                            <p>news k bare me 2 line!!!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="threebox">
+                        <div class="threebox1">
+                            <img src="E:\pics\img3.jfif" width="100px" height="100px" />
+                        </div>
+                        <div class="threebox2">
+                            <h4>Maharashtra</h4>
+                            <p>news k bare me 2 line!!!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="threebox">
+                        <div class="threebox1">
+                            <img src="E:\pics\img3.jfif" width="100px" height="100px" />
+                        </div>
+                        <div class="threebox2">
+                            <h4>Jharkhand</h4>
+                            <p>news k bare me 2 line!!!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="threebox">
+                        <div class="threebox1">
+                            <img src="E:\pics\img3.jfif" width="100px" height="100px" />
+                        </div>
+                        <div class="threebox2">
+                            <h4>UP</h4>
+                            <p>news k bare me 2 line!!!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="threebox">
+                        <div class="threebox1">
+                            <img src="E:\pics\img3.jfif" width="100px" height="100px" />
+                        </div>
+                        <div class="threebox2">
+                            <h4>Rajasthan</h4>
+                            <p>news k bare me 2 line!!!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="threebox">
+                        <div class="threebox1">
+                            <img src="E:\pics\img3.jfif" width="100px" height="100px" />
+                        </div>
+                        <div class="threebox2">
+                            <h4>Chattisgarh</h4>
+                            <p>news k bare me 2 line!!!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="bottombox">
+                        <div class="section">
+                            <h4>Section</h4>
+                            <a href="#">ePaper</a><br>
+                            <a href="#">Cricket News</a><br>
+                            <a href="#">Gujarati News</a><br>
+                            <a href="#">Marathi News</a><br>
+                            <a href="#">Bollywood News</a><br>
+                            <a href="#">Hindi Samachar</a><br>
+                            <a href="#">Religion</a><br>
+                            <a href="#">Dharam</a><br>
+                            <a href="#">Aaj ka Rashifal</a><br>
+                            <a href="#">Vastu tips</a><br>
+                            <a href="#">Latest news in hindi</a><br>
+                            <a href="#">Lifestyle Tips</a><br>
+                        </div>
+                        <div class="Latestnews">
+                            <h4>Latest News</h4>
+                            <a href="#">India News</a><br>
+                            <a href="#">World News</a><br>
+                            <a href="#">MP News</a><br>
+                            <a href="#">Bihar News</a><br>
+                            <a href="#">Mumbai News</a><br>
+                            <a href="#">Rajasthan News</a><br>
+                            <a href="#">Delhi News</a><br>
+                            <a href="#">Gujarat News</a><br>
+                            <a href="#">Uttar Pradesh News</a><br>
+                            <a href="#">Jharkhand News</a><br>
+                            <a href="#">Chattisgarh News</a><br>
+                            <a href="#">Haryana News</a><br>
+                            <a href="#">Punjab News</a><br>
+                            <a href="#">Hariyana & Chandigarh News</a>
+                        </div>
+                        <div class="Trending">
+                            <h4>Trending</h4>
+                            <a href="#">Sarkari Naukari</a>
+                        </div>
+                        <div class="followus">
+                            <h4>Follow us</h4>
+                            <div class="followuslogo"></div>
+                            <h4>App Download</h4>
+                            <div class="appdownloadlogo"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+</body>
+</html>
